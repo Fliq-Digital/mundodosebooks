@@ -10,6 +10,7 @@ interface Product {
   id: string
   name: string
   price: number
+  monthlyIncome: number
   sections: any
 }
 
