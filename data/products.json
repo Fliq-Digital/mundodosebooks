@@ -1,0 +1,94 @@
+{
+  "panetones-recheados": {
+    "id": "panetones-recheados",
+    "name": "Panetones Recheados",
+    "description": "Guia completo para fazer panetones recheados artesanais e transformar o Natal em uma fonte de lucro com produtos personalizados e de alto valor percebido.",
+    "price": 24.90,
+    "monthlyIncome": 2000,
+    "image": "/placeholder.svg?height=600&width=600",
+    "heroImage": "/placeholder.svg?height=800&width=1200",
+    "instructorImage": "/placeholder.svg?height=400&width=400",
+    "videoUrl": "https://www.youtube.com/embed/placeholder",
+    "seo": {
+      "title": "Panetones Recheados - Guia Completo para Lucrar no Natal",
+      "description": "Aprenda a produzir panetones recheados artesanais, calcular custos, definir preços, embalar com aparência premium e vender com alta margem de lucro no Natal.",
+      "keywords": "panetones recheados, e-book panetone, negócio de Natal, confeitaria, recheios para panetone, ganhar dinheiro no Natal"
+    },
+    "sections": {
+      "hero": {
+        "headline": "Panetones Recheados Lucrativos",
+        "subheadline": "por mês vendendo panetones artesanais, recheados e personalizados.",
+        "tagline": "Guia prático para lucrar no Natal",
+        "cta": "Sim! Quero Aproveitar essa Oferta!",
+        "videoTitle": "Veja como funciona o e-book",
+        "videoSubtitle": "Descubra, em poucos minutos, como transformar panetones recheados em um negócio natalino lucrativo."
+      },
+      "whatYouWillLearn": {
+        "title": "Veja o que você vai aprender com o E-book",
+        "subtitle": "Panetones Recheados Lucrativos",
+        "sideImage": "/o-que-aprender.png?height=400&width=400",
+        "highlights": [
+          "Por que panetones recheados são tão procurados no Natal e como transformar essa demanda em lucro para você.",
+          "Receita base de panetone de 1 kg: pré-fermento, mistura, sova, crescimento, forno e resfriamento explicados passo a passo.",
+          "Dicas práticas de fermentação: temperatura ideal, umidade, tempo de descanso e escolha do fermento para massas sempre fofinhas.",
+          "Como abrir o topo, cavar, rechear com creme gelado, fechar sem deformar o panetone e embalar com segurança.",
+          "Receitas de recheios campeões: brigadeiro cremoso, creme de leite condensado com nozes, sorvete com licor, creme de maracujá com ganache de chocolate e creme de avelã com amêndoas.",
+          "Como calcular custos, definir preço de venda e chegar a lucros médios de cerca de R$ 70 por panetone recheado.",
+          "Sugestões de embalagens premium, organização da produção, gestão de pedidos e estratégias simples de marketing para vender mais no Natal."
+        ]
+      },
+      "targetAudience": {
+        "title": "Para quem é o Curso",
+        "subtitle": "Panetones Recheados Lucrativos",
+        "sideImage": "/pra-quem-e.png?height=400&width=400",
+        "points": [
+          "Para quem quer aproveitar o Natal para ganhar uma renda extra vendendo panetones recheados artesanais.",
+          "Para confeiteiras iniciantes que desejam um passo a passo claro, desde a massa até a embalagem final.",
+          "Para quem já vende doces e quer adicionar um produto de alto valor agregado ao cardápio de fim de ano.",
+          "Para quem trabalha em casa e busca um produto fácil de personalizar, com ótima margem de lucro.",
+          "Para quem sonha em criar uma marca artesanal forte e encantar clientes com presentes natalinos inesquecíveis."
+        ]
+      },
+      "gallery": {
+        "title": "Veja só as Delícias que você vai aprender com o Curso",
+        "subtitle": "Panetones Recheados Lucrativos",
+        "images": [
+          "/panetone-1.png?height=300&width=300",
+          "/panetone-2.png?height=300&width=300",
+          "/panetone-3.png?height=300&width=300",
+          "/panetone-4.png?height=300&width=300",
+          "/panetone-5.png?height=300&width=300"
+        ]
+      },
+      "socialProof": {
+        "title": "Panetones recheados que viram lucro de verdade",
+        "testimonials": [
+          {
+            "name": "Mariana S.",
+            "role": "Confeiteira",
+            "text": "Comecei com poucos ingredientes, foquei nos panetones recheados e, no primeiro Natal, já tive lucro de cerca de R$ 70 por unidade vendida.",
+            "image": "/confeiteira.png?height=80&width=80"
+          },
+          {
+            "name": "João T.",
+            "role": "Empreendedor",
+            "text": "Usei as dicas de marketing local e redes sociais do e-book e vendi dezenas de panetones recheados em poucas semanas de Natal.",
+            "image": "/empreendedor.png?height=80&width=80"
+          },
+          {
+            "name": "Carol M.",
+            "role": "Confeiteira Profissional",
+            "text": "Melhorei minhas receitas, caprichei nas embalagens premium e hoje meus panetones recheados são o produto mais pedido no fim de ano.",
+            "image": "/confeiteira-2.png?height=80&width=80"
+          }
+        ]
+      },
+      "offer": {
+        "title": "Pronta para lucrar neste Natal?",
+        "description": "Panetones recheados são uma excelente oportunidade de negócio no Natal: vendem bem, têm alto valor agregado e encantam os clientes. No e-book, você aprende desde a receita base até o recheio, embalagem premium, formação de preço (com exemplo de custo médio de R$ 50 e venda a R$ 120) e estratégias simples de marketing para vender mais.",
+        "finalCta": "Sim! Quero Aproveitar essa Oferta!",
+        "guarantee": "Garantia de 7 dias. Se não gostar, reembolso total sem perguntas."
+      }
+    }
+  }
+}
