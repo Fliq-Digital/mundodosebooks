@@ -2,19 +2,22 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
+import type { Product } from "@/types/product"
 
 interface FAQ {
   q: string
   a: string
 }
 
-interface Product {
-  sections: any
-}
-
 export default function FAQSection({ product }: { product: Product }) {
-  const { title, questions } = product.sections.faq
+  const faq = product.sections.faq
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
+
+  if (!faq) {
+    return null
+  }
+
+  const { title, questions } = faq
 
   return (
     <section className="py-20 bg-white">

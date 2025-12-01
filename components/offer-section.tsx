@@ -1,9 +1,6 @@
 "use client"
 
-interface Product {
-  price: number
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function OfferSection({ product }: { product: Product }) {
   const { title, description, finalCta, guarantee } = product.sections.offer

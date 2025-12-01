@@ -1,12 +1,13 @@
 "use client"
 
-interface Product {
-  sections: any
-  instructorImage: string
-}
+import type { Product } from "@/types/product"
 
 export default function InstructorSection({ product }: { product: Product }) {
-  const { instructor } = product.sections
+  const instructor = product.sections.instructor
+
+  if (!instructor) {
+    return null
+  }
 
   return (
     <>

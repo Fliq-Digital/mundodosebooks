@@ -1,11 +1,15 @@
 "use client"
 
-interface Product {
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function ProblemSection({ product }: { product: Product }) {
-  const { title, points } = product.sections.problem
+  const problem = product.sections.problem
+
+  if (!problem) {
+    return null
+  }
+
+  const { title, points } = problem
 
   return (
     <section className="py-20 bg-white">

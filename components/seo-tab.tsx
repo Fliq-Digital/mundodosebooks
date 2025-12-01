@@ -2,18 +2,11 @@
 
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-
-interface Product {
-  seo: {
-    title: string
-    description: string
-    keywords: string
-  }
-}
+import type { Product } from "@/types/product"
 
 interface SEOTabProps {
   product: Product
-  onChange: (path: string[], value: any) => void
+  onChange: (path: string[], value: string) => void
 }
 
 export default function SEOTab({ product, onChange }: SEOTabProps) {

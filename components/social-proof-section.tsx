@@ -1,14 +1,12 @@
 "use client"
 
+import type { Product } from "@/types/product"
+
 interface Testimonial {
   name: string
   role: string
   text: string
   image: string
-}
-
-interface Product {
-  sections: any
 }
 
 export default function SocialProofSection({ product }: { product: Product }) {
@@ -39,7 +37,7 @@ export default function SocialProofSection({ product }: { product: Product }) {
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4 italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 leading-relaxed mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-lg">

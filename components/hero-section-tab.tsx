@@ -2,21 +2,11 @@
 
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-
-interface Product {
-  sections: {
-    hero: {
-      headline: string
-      subheadline: string
-      cta: string
-      urgency: string
-    }
-  }
-}
+import type { Product } from "@/types/product"
 
 interface HeroSectionTabProps {
   product: Product
-  onChange: (path: string[], value: any) => void
+  onChange: (path: string[], value: string) => void
 }
 
 export default function HeroSectionTab({ product, onChange }: HeroSectionTabProps) {
@@ -60,11 +50,29 @@ export default function HeroSectionTab({ product, onChange }: HeroSectionTabProp
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Urgência</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Tagline</label>
             <Input
-              value={hero.urgency}
-              onChange={(e) => onChange(["sections", "hero", "urgency"], e.target.value)}
-              placeholder="Aproveite a Oportunidade Natalina"
+              value={hero.tagline}
+              onChange={(e) => onChange(["sections", "hero", "tagline"], e.target.value)}
+              placeholder="Guia prático para lucrar no Natal"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Título do Vídeo</label>
+            <Input
+              value={hero.videoTitle}
+              onChange={(e) => onChange(["sections", "hero", "videoTitle"], e.target.value)}
+              placeholder="Veja como funciona o e-book"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Subtítulo do Vídeo</label>
+            <Input
+              value={hero.videoSubtitle}
+              onChange={(e) => onChange(["sections", "hero", "videoSubtitle"], e.target.value)}
+              placeholder="Descubra, em poucos minutos..."
             />
           </div>
         </div>

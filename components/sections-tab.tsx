@@ -2,17 +2,14 @@
 
 import { Card } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-
-interface Product {
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 interface SectionsTabProps {
   product: Product
-  onChange: (path: string[], value: any) => void
+  onChange: (path: string[], value: string | number | boolean) => void
 }
 
-export default function SectionsTab({ product, onChange }: SectionsTabProps) {
+export default function SectionsTab({ product }: SectionsTabProps) {
   return (
     <div className="space-y-6">
       <Card className="p-6">

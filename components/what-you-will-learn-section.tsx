@@ -1,11 +1,9 @@
 "use client"
 
-interface Product {
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function WhatYouWillLearnSection({ product }: { product: Product }) {
-  const { title, subtitle, sideImage, highlights } = product.sections.whatYouWillLearn
+  const { subtitle, sideImage, highlights } = product.sections.whatYouWillLearn
 
   return (
     <>

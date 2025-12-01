@@ -1,17 +1,21 @@
 "use client"
 
+import type { Product } from "@/types/product"
+
 interface Benefit {
   title: string
   description: string
   icon: string
 }
 
-interface Product {
-  sections: any
-}
-
 export default function SolutionSection({ product }: { product: Product }) {
-  const { title, subtitle, benefits } = product.sections.solution
+  const solution = product.sections.solution
+
+  if (!solution) {
+    return null
+  }
+
+  const { title, subtitle, benefits } = solution
 
   return (
     <section className="py-20 bg-gradient-to-b from-amber-50 to-orange-50">

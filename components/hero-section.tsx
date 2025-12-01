@@ -1,10 +1,6 @@
 "use client"
 
-interface Product {
-  price: number
-  monthlyIncome: number
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function HeroSection({ product }: { product: Product }) {
   const { hero } = product.sections

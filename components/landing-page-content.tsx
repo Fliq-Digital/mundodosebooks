@@ -5,14 +5,7 @@ import TargetAudienceSection from "./target-audience-section"
 import GallerySection from "./gallery-section"
 import SocialProofSection from "./social-proof-section"
 import OfferSection from "./offer-section"
-
-interface Product {
-  id: string
-  name: string
-  price: number
-  monthlyIncome: number
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 interface LandingPageContentProps {
   product: Product

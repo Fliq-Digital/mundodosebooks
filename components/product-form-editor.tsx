@@ -7,17 +7,7 @@ import BasicInfoTab from "./basic-info-tab"
 import SEOTab from "./seo-tab"
 import HeroSectionTab from "./hero-section-tab"
 import SectionsTab from "./sections-tab"
-
-interface Product {
-  id: string
-  name: string
-  description: string
-  price: number
-  image: string
-  heroImage: string
-  seo: any
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 interface ProductFormEditorProps {
   product: Product
@@ -30,27 +20,31 @@ export default function ProductFormEditor({
   product: initialProduct,
   onSave,
   saving,
-  isNew = false,
 }: ProductFormEditorProps) {
   const [product, setProduct] = useState(initialProduct)
 
-  const handleChange = (field: string, value: any) => {
+  const handleChange = (field: string, value: string | number) => {
     setProduct((prev) => ({
       ...prev,
       [field]: value,
     }))
   }
 
-  const handleNestedChange = (path: string[], value: any) => {
+  const handleNestedChange = (path: string[], value: string | number | boolean) => {
     setProduct((prev) => {
-      const updated = { ...prev }
-      let current = updated
+      const updated = { ...prev } as Record<string, unknown>
+      let current: Record<string, unknown> = updated
       for (let i = 0; i < path.length - 1; i++) {
-        current[path[i]] = { ...current[path[i]] }
-        current = current[path[i]]
+        const nextValue = current[path[i]]
+        if (nextValue && typeof nextValue === "object" && !Array.isArray(nextValue)) {
+          current[path[i]] = { ...(nextValue as Record<string, unknown>) }
+        } else {
+          current[path[i]] = {}
+        }
+        current = current[path[i]] as Record<string, unknown>
       }
       current[path[path.length - 1]] = value
-      return updated
+      return updated as unknown as Product
     })
   }
 

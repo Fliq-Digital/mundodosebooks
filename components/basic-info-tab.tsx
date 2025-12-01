@@ -2,19 +2,11 @@
 
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-
-interface Product {
-  id: string
-  name: string
-  description: string
-  price: number
-  image: string
-  heroImage: string
-}
+import type { Product } from "@/types/product"
 
 interface BasicInfoTabProps {
   product: Product
-  onChange: (field: string, value: any) => void
+  onChange: (field: string, value: string | number) => void
 }
 
 export default function BasicInfoTab({ product, onChange }: BasicInfoTabProps) {

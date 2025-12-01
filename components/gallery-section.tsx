@@ -1,11 +1,9 @@
 "use client"
 
-interface Product {
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function GallerySection({ product }: { product: Product }) {
-  const { title, subtitle, images } = product.sections.gallery
+  const { subtitle, images } = product.sections.gallery
 
   return (
     <>

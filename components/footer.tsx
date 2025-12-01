@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
@@ -40,20 +42,20 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-4">Links Rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a 
+                <Link 
                   href="/panetones-recheados" 
                   className="hover:text-amber-400 transition-colors cursor-pointer"
                 >
                   E-book Panetones Recheados
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
+                <Link 
                   href="/" 
                   className="hover:text-amber-400 transition-colors cursor-pointer"
                 >
                   Página Inicial
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

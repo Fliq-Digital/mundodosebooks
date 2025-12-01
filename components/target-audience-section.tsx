@@ -1,11 +1,9 @@
 "use client"
 
-interface Product {
-  sections: any
-}
+import type { Product } from "@/types/product"
 
 export default function TargetAudienceSection({ product }: { product: Product }) {
-  const { title, subtitle, sideImage, points } = product.sections.targetAudience
+  const { subtitle, sideImage, points } = product.sections.targetAudience
 
   return (
     <>
