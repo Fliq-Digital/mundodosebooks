@@ -46,7 +46,7 @@ export default function OfferSection({ product }: { product: Product }) {
           href="https://pay.kirvano.com/ead7c126-2f74-42d6-a9aa-38eb9d7c0cdc"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-black font-bold text-xl px-16 py-6 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 mb-6 w-full max-w-md mx-auto cursor-pointer"
+          className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-black font-bold text-sm md:text-xl px-6 md:px-16 py-5 md:py-6 rounded-2xl shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 mb-6 w-full max-w-md mx-auto cursor-pointer text-center whitespace-normal"
         >
           {finalCta}
         </a>

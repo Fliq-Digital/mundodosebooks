@@ -61,7 +61,7 @@ export default function HeroSection({ product }: { product: Product }) {
               href="https://pay.kirvano.com/ead7c126-2f74-42d6-a9aa-38eb9d7c0cdc"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-black font-bold text-lg px-12 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-all cursor-pointer"
+              className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-black font-bold text-sm md:text-lg px-6 md:px-12 py-6 md:py-8 rounded-2xl shadow-lg hover:shadow-xl transition-all cursor-pointer text-center whitespace-normal"
             >
               {hero.cta}
             </a>
